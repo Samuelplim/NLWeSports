@@ -1,3 +1,0 @@
-Tecnologias
-Node + Typescript
-Express

@@ -5,11 +5,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
-app.get("/ads", (req, res) => {
-    return res.json([
-        { id: 1, name: "Samuel " },
-        { id: 2, name: "Samuel " },
-        { id: 3, name: "Samuel " },
-    ]);
+app.get("/games", (req, res) => {
+    return res.json([]);
+});
+app.post("/ads", (req, res) => {
+    return res.status(201).json([]);
+});
+app.get("/games/:id/discord", (req, res) => {
+    return res.json([]);
 });
 app.listen(3333);
